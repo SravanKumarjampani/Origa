@@ -1,0 +1,50 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu main main main main main'
+    'menu footer footer footer footer footer'
+    'header header header header header header';
+  grid-gap: 10px;
+  /* background-color: rgb(189, 189, 189); */
+  padding: 90px;
+}
+
+.grid-container > div {
+  border: rgb(100, 100, 100) 2px solid;
+  background-color: rgb(189, 189, 189);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.vl {
+  border-left: 2px solid rgb(100, 100, 100);
+}
+
+table {
+  margin-left: 5%;
+  width: 90%;
+}
+
+.user-table {
+  background-color: transparent; 
+  box-shadow: none; 
+  border: rgb(100, 100, 100) 2px solid;
+}
+
+.name-card {
+  text-align: left;
+  margin-top: 8%;
+  margin-left: 10%;
+}
+    
+.user-count {
+  display: flex; 
+  align-items: center; 
+  margin-left: 40%;
+}
